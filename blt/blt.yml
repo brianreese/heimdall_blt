@@ -1,6 +1,6 @@
 project:
-  machine_name: heimdall_blt
-  prefix: BLT
+  machine_name: heimdallblt
+  prefix: HMD
   human_name: 'BLTed 8'
   profile:
     name: lightning
@@ -9,7 +9,8 @@ project:
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+    cloud: 'eebreese@svn-17778.prod.hosting.acquia.com:eebreese.git'
 drush:
   aliases:
     remote: '${project.machine_name}.test'
